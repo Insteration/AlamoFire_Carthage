@@ -12,7 +12,27 @@
 		D9EB0EE521CC1C71004E487C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9EB0EE321CC1C71004E487C /* Main.storyboard */; };
 		D9EB0EE721CC1C72004E487C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9EB0EE621CC1C72004E487C /* Assets.xcassets */; };
 		D9EB0EEA21CC1C72004E487C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9EB0EE821CC1C72004E487C /* LaunchScreen.storyboard */; };
+		D9EB0EF221CC1D68004E487C /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = D9EB0EF121CC1D68004E487C /* Cartfile */; };
+		D9EB0F3921CD7808004E487C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9EB0F3821CD7808004E487C /* Alamofire.framework */; };
+		D9EB0F3A21CD7834004E487C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9EB0F3821CD7808004E487C /* Alamofire.framework */; };
+		D9EB0F3B21CD7834004E487C /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9EB0F3821CD7808004E487C /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D9EB0F3D21CD7C85004E487C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB0F3C21CD7C85004E487C /* WebViewController.swift */; };
+		D9EB0F3F21CD7D8E004E487C /* WKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB0F3E21CD7D8E004E487C /* WKViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D9EB0F1021CC1EE1004E487C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D9EB0F3B21CD7834004E487C /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D9EB0EDC21CC1C71004E487C /* AlamoFire_Carthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamoFire_Carthage.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +42,10 @@
 		D9EB0EE621CC1C72004E487C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9EB0EE921CC1C72004E487C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9EB0EEB21CC1C72004E487C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9EB0EF121CC1D68004E487C /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		D9EB0F3821CD7808004E487C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		D9EB0F3C21CD7C85004E487C /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		D9EB0F3E21CD7D8E004E487C /* WKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9EB0F3921CD7808004E487C /* Alamofire.framework in Frameworks */,
+				D9EB0F3A21CD7834004E487C /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +64,7 @@
 		D9EB0ED321CC1C71004E487C = {
 			isa = PBXGroup;
 			children = (
+				D9EB0EF121CC1D68004E487C /* Cartfile */,
 				D9EB0EDE21CC1C71004E487C /* AlamoFire_Carthage */,
 				D9EB0EDD21CC1C71004E487C /* Products */,
 			);
@@ -56,10 +83,13 @@
 			children = (
 				D9EB0EDF21CC1C71004E487C /* AppDelegate.swift */,
 				D9EB0EE121CC1C71004E487C /* ViewController.swift */,
+				D9EB0F3821CD7808004E487C /* Alamofire.framework */,
 				D9EB0EE321CC1C71004E487C /* Main.storyboard */,
+				D9EB0F3C21CD7C85004E487C /* WebViewController.swift */,
 				D9EB0EE621CC1C72004E487C /* Assets.xcassets */,
 				D9EB0EE821CC1C72004E487C /* LaunchScreen.storyboard */,
 				D9EB0EEB21CC1C72004E487C /* Info.plist */,
+				D9EB0F3E21CD7D8E004E487C /* WKViewController.swift */,
 			);
 			path = AlamoFire_Carthage;
 			sourceTree = "<group>";
@@ -74,6 +104,7 @@
 				D9EB0ED821CC1C71004E487C /* Sources */,
 				D9EB0ED921CC1C71004E487C /* Frameworks */,
 				D9EB0EDA21CC1C71004E487C /* Resources */,
+				D9EB0F1021CC1EE1004E487C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,6 +155,7 @@
 			files = (
 				D9EB0EEA21CC1C72004E487C /* LaunchScreen.storyboard in Resources */,
 				D9EB0EE721CC1C72004E487C /* Assets.xcassets in Resources */,
+				D9EB0EF221CC1D68004E487C /* Cartfile in Resources */,
 				D9EB0EE521CC1C71004E487C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +168,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9EB0EE221CC1C71004E487C /* ViewController.swift in Sources */,
+				D9EB0F3D21CD7C85004E487C /* WebViewController.swift in Sources */,
+				D9EB0F3F21CD7D8E004E487C /* WKViewController.swift in Sources */,
 				D9EB0EE021CC1C71004E487C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,9 +315,14 @@
 		D9EB0EEF21CC1C72004E487C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B4FXKBHXYA;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AlamoFire_Carthage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -291,6 +330,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "AK.AlamoFire-Carthage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,9 +339,14 @@
 		D9EB0EF021CC1C72004E487C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B4FXKBHXYA;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AlamoFire_Carthage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +354,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "AK.AlamoFire-Carthage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
